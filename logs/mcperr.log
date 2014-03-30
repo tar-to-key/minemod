@@ -1,0 +1,38 @@
+07:31:55 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+07:35:44 - '"java" -cp "runtime/bin/specialsource.jar:lib:lib/*:jars/minecraft_server.1.7.2.jar" -jar runtime/bin/specialsource.jar -i jars/minecraft_server.1.7.2.jar -o temp/minecraft_server_rg.jar -m temp/server_rg.srg --kill-source --kill-lvt --kill-generics' failed : 1
+07:35:44 - 
+07:35:44 - == ERRORS FOUND ==
+07:35:44 - 
+07:35:44 - Loading mappings
+07:35:44 - 7 packages, 1806 classes, 6785 fields, 12866 methods
+07:35:44 - Remapping final jar
+07:35:44 - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+07:35:44 - 	at java.util.Arrays.copyOfRange(Arrays.java:3209)
+07:35:44 - 	at java.lang.String.<init>(String.java:215)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readUTF(ClassReader.java:2137)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readUTF8(ClassReader.java:2088)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readCode(ClassReader.java:1315)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readMethod(ClassReader.java:938)
+07:35:44 - 	at org.objectweb.asm.ClassReader.accept(ClassReader.java:669)
+07:35:44 - 	at org.objectweb.asm.ClassReader.accept(ClassReader.java:506)
+07:35:44 - 	at net.md_5.specialsource.Jar.getNode(Jar.java:140)
+07:35:44 - 	at net.md_5.specialsource.provider.JarProvider.getParents(JarProvider.java:52)
+07:35:44 - 	at net.md_5.specialsource.provider.JointProvider.getParents(JointProvider.java:50)
+07:35:44 - 	at net.md_5.specialsource.JarMapping.tryClimb(JarMapping.java:104)
+07:35:44 - 	at net.md_5.specialsource.JarMapping.tryClimb(JarMapping.java:111)
+07:35:44 - 	at net.md_5.specialsource.JarRemapper.mapMethodName(JarRemapper.java:165)
+07:35:44 - 	at net.md_5.specialsource.UnsortedRemappingMethodAdapter.visitMethodInsn(UnsortedRemappingMethodAdapter.java:166)
+07:35:44 - 	at org.objectweb.asm.MethodVisitor.visitMethodInsn(MethodVisitor.java:382)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readCode(ClassReader.java:1320)
+07:35:44 - 	at org.objectweb.asm.ClassReader.readMethod(ClassReader.java:938)
+07:35:44 - 	at org.objectweb.asm.ClassReader.accept(ClassReader.java:669)
+07:35:44 - 	at org.objectweb.asm.ClassReader.accept(ClassReader.java:506)
+07:35:44 - 	at net.md_5.specialsource.JarRemapper.remapClassFile(JarRemapper.java:247)
+07:35:44 - 	at net.md_5.specialsource.JarRemapper.remapClassFile(JarRemapper.java:229)
+07:35:44 - 	at net.md_5.specialsource.JarRemapper.remapJar(JarRemapper.java:190)
+07:35:44 - 	at net.md_5.specialsource.SpecialSource.main(SpecialSource.java:259)
+07:35:44 - ==================
+07:35:44 - 
+07:35:44 - Decompile failed
+07:55:17 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+07:55:22 - !! client already decompiled. Run cleanup before decompiling again !!
